@@ -7,13 +7,14 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 
 <body>
 
 <!-- Nav Section starts here -->
     <nav>
-        <div>
+        <div id="nav-logo">
             <h4>OJ.Cann</h4>
         </div>
         <div class="nav-items">
@@ -30,8 +31,8 @@
 <!-- Hero Section starts here -->
     <Section class="hero">
         <div class="hero-info">
-            <p>Hi There!!</p>
-            <h1 class="title text-white">I am <span>Joel Cann <br /></span> A Web Developer</span>span</h1>
+                <p>Hi There!!</p>
+            <h1 class="title text-white">I am <span>Joel Cann <br /></span> A Web Developer</span></h1>
             <p>
                 I'm the most experienced web developoer you may come accross.
             </p>
@@ -46,9 +47,27 @@
 
 
 <!-- About Us Section starts here -->
-    <section>
-        <div>
+    <section class="flex flex-row justify-between w-[70%] mx-auto my-[7%]">
+        <div class="w-[40%]">
             <img src="/assets/images/about-image.png" alt="An Image of myself">
+        </div>
+        <div class="w-[40%]">
+            <div>
+                <span>ABOUT ME</span>
+                <span>SKILLS</span>
+                <span>EXPERIENCE</span>
+            </div>
+            <div>
+                <h2>My Story</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis praesentium inventore veniam laboriosam minus! Laborum, harum? Amet molestiae voluptates ipsum quod modi at doloremque! Quas, assumenda ducimus aliquam optio voluptatum pariatur velit molestias dolorem. 
+                </p>
+                <h3>
+                    I Do Web Design & Developement since I was 18 Years Old
+                </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio molestias magni quis. Nesciunt eligendi deserunt amet qui! Similique, veniam porro.
+                </p>
+            </div>
+            
         </div>
     </section>
 <!-- About Us Section ends here -->
