@@ -1,5 +1,6 @@
 body {
   font-family: rob;
+  overflow-x: hidden;
 }
 
 nav {
@@ -34,7 +35,6 @@ nav {
 
 .hero {
   background-image: url(../images/heroBg.png);
-  width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -71,4 +71,17 @@ nav {
 .btn-white {
   background-color: #ffffff;
   color: #0779e4;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 2rem;
+}
+
+.about-us-image {
+  background-image: url(../images/about-image.png);
+  background-position: center;
+  background-size: cover;
 }
