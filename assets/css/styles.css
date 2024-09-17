@@ -25,7 +25,7 @@ body {
   justify-content: center;
   margin-top: 50px;
   margin-left: 40px;
-  margin-right: 40px;
+  margin-right: 45px;
   padding-bottom: 25px;
   border-bottom: 1.5px solid #f0f0f6;
 }
@@ -61,6 +61,15 @@ body {
   height: 24px;
 }
 
+#about {
+  margin-top: 25px;
+  margin-left: 40px;
+  margin-right: 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+
 .about-item {
   width: 220px;
   height: 24px;
@@ -82,4 +91,59 @@ body {
 .about-item .value {
   font-size: 0.9rem;
   color: #2b2b2b;
+}
+
+.divider {
+  width: 220px;
+  border-top: 1.5px solid #f0f0f6;
+  margin: 25px 0;
+}
+
+#languages {
+  width: 220px;
+}
+
+#languages h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+}
+
+.language-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.language-item p {
+  display: inline-block;
+}
+
+.language-item .lang {
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+.language-item .percent {
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+.progress-bar-container {
+  width: 220px;
+  height: 4px;
+  border: 0.5px solid #ffb400;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 218px;
+  height: 1.5px;
+  border: 0.5px solid #ffb400;
+  border-radius: 50px;
+  background-color: #ffb400;
 }
