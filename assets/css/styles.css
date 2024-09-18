@@ -10,7 +10,7 @@ body {
 #sidebar {
   background-color: white;
   width: 305px;
-  height: 1315px;
+  height: 1415px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -194,4 +194,221 @@ body {
   border-radius: 30px;
   background-color: #ffb400;
   margin-left: 1.5px;
+}
+
+#skills {
+  width: 220px;
+}
+
+#skills h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+}
+
+.s-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+  text-align: start;
+}
+
+.skill-item {
+  width: 220px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-item p {
+  display: inline-block;
+}
+
+.skill-item .skill {
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+.skill-item .percent {
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+.progress-bar4-container {
+  width: 220px;
+  height: 6px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.progress-bar4 {
+  width: 212px;
+  height: 3px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  background-color: #ffb400;
+  margin-left: 1.5px;
+}
+
+.progress-bar5-container {
+  width: 220px;
+  height: 6px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.progress-bar5 {
+  width: 212px;
+  height: 3px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  background-color: #ffb400;
+  margin-left: 1.5px;
+}
+
+.progress-bar6-container {
+  width: 220px;
+  height: 6px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.progress-bar6 {
+  width: 141px;
+  height: 3px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  background-color: #ffb400;
+  margin-left: 1.5px;
+}
+
+.progress-bar7-container {
+  width: 220px;
+  height: 6px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.progress-bar7 {
+  width: 174px;
+  height: 3px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  background-color: #ffb400;
+  margin-left: 1.5px;
+}
+
+.progress-bar8-container {
+  width: 220px;
+  height: 6px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.progress-bar8 {
+  width: 108px;
+  height: 3px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  background-color: #ffb400;
+  margin-left: 1.5px;
+}
+
+.progress-bar12-container {
+  width: 220px;
+  height: 6px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+
+.progress-bar12 {
+  width: 195px;
+  height: 3px;
+  border: 0.5px solid #ffb400;
+  border-radius: 30px;
+  background-color: #ffb400;
+  margin-left: 1.5px;
+}
+
+#e-skills {
+  width: 220px;
+}
+
+#e-skills h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+}
+
+#e-skill-item {
+  width: 220px;
+  height: 24px;
+  display: flex;
+  align-items: start;
+  column-gap: 15px;
+}
+
+#e-skill-item img {
+  width: 15px;
+  height: 15px;
+}
+
+#e-skill-item p {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: #767676;
+}
+
+#download-btn {
+  width: 220px;
+  height: 40px;
+  background-color: #ffb400;
+}
+
+#download-btn img {
+  width: 14px;
+  height: 16px;
+}
+
+button-items {
+  display: flex;
 }
