@@ -431,10 +431,6 @@ body {
   height: 16px;
 }
 
-button-items {
-  display: flex;
-}
-
 /* Middle Container */
 
 #middle-section {
@@ -468,6 +464,7 @@ button-items {
 
 #hero-description h1 {
   font-size: 48px;
+  line-height: 3.5rem;
   color: #2b2b2b;
   margin-bottom: 18px;
   font-weight: bold;
