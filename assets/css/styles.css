@@ -150,7 +150,7 @@ body {
 }
 
 .progress-bar-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -163,7 +163,7 @@ body {
 }
 
 .progress-bar {
-  width: 217px;
+  width: 99%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -171,7 +171,7 @@ body {
 }
 
 .progress-bar2-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -184,7 +184,7 @@ body {
 }
 
 .progress-bar2 {
-  width: 33px;
+  width: 15%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -193,7 +193,7 @@ body {
 }
 
 .progress-bar3-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -206,7 +206,7 @@ body {
 }
 
 .progress-bar3 {
-  width: 120px;
+  width: 55%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -255,7 +255,7 @@ body {
 }
 
 .progress-bar4-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -268,7 +268,7 @@ body {
 }
 
 .progress-bar4 {
-  width: 212px;
+  width: 97%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -277,7 +277,7 @@ body {
 }
 
 .progress-bar5-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -290,7 +290,7 @@ body {
 }
 
 .progress-bar5 {
-  width: 212px;
+  width: 97%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -299,7 +299,7 @@ body {
 }
 
 .progress-bar6-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -312,7 +312,7 @@ body {
 }
 
 .progress-bar6 {
-  width: 141px;
+  width: 65%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -321,7 +321,7 @@ body {
 }
 
 .progress-bar7-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -334,7 +334,7 @@ body {
 }
 
 .progress-bar7 {
-  width: 174px;
+  width: 80%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -343,7 +343,7 @@ body {
 }
 
 .progress-bar8-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -356,7 +356,7 @@ body {
 }
 
 .progress-bar8 {
-  width: 108px;
+  width: 50%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -365,7 +365,7 @@ body {
 }
 
 .progress-bar12-container {
-  width: 220px;
+  width: 100%;
   height: 6px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
@@ -378,7 +378,7 @@ body {
 }
 
 .progress-bar12 {
-  width: 195px;
+  width: 90%;
   height: 3px;
   border: 0.5px solid #ffb400;
   border-radius: 30px;
