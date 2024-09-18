@@ -508,10 +508,29 @@ body {
 
 #navbar {
   width: 6.5%;
+  height: 100vh;
+  position: static;
 }
 
 #nav-container {
-  width: 108px;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#icon-container {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#nav-container button {
+  width: 40%;
 }
