@@ -3,10 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Joel's Portfolio</title>
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -192,7 +200,8 @@
         <!-- Middle Section -->
         <section id="middle-section">
           <div id="middle-container">
-            <div id="hero-section">
+            <!-- Hero Section -->
+            <section id="hero-section">
               <div id="hero-container">
                 <div id="hero-description">
                   <h1>I'm Joel Cann<br /><span>Front-end</span> Developer</h1>
@@ -208,7 +217,46 @@
                 </div>
                 <div id="hero-img"></div>
               </div>
-            </div>
+            </section>
+
+            <!-- Services section -->
+            <section id="services">
+              <div id="services-container">
+                <div class="desc">
+                  <h3>My Services</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempora cupiditate minus pariatur vel suscipit illo et animi
+                    deleniti. Saepe, eligendi.
+                  </p>
+                </div>
+                <div class="cards">
+                  <div class="top-row">
+                    <div class="card">
+                      <img src="./assets/images/web-dev.png" alt="ui/ux icon" />
+                      <h5>Web Development</h5>
+                      <p>Ecommerce, Blogs, LMS...</p>
+                    </div>
+                    <div class="card">
+                      <img src="./assets/images/uiux.png" alt="ui/ux icon" />
+                      <h5>Web Development</h5>
+                      <p>Ecommerce, Blogs, LMS...</p>
+                    </div>
+                    <div class="card">
+                      <img
+                        src="./assets/images/microphone.png"
+                        alt="ui/ux icon"
+                      />
+                      <h5>Web Development</h5>
+                      <p>Ecommerce, Blogs, LMS...</p>
+                    </div>
+                  </div>
+                  <div class="bottom-row">
+                    <div class="card"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
         </section>
 
@@ -217,7 +265,7 @@
           <div id="nav-container">
             <div id="icon-container">
               <button>
-                <img src="./assets/images/Home.png" alt="home button" />
+                <img src="./assets/images/home.png" alt="home button" />
               </button>
               <button>
                 <img src="./assets/images/service.png" alt="service button" />

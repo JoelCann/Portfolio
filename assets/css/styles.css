@@ -1,7 +1,9 @@
 body {
   background-color: #f0f0f6;
-  padding: 0;
-  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+
+  font-style: normal;
 }
 
 #front {
@@ -533,4 +535,32 @@ body {
 
 #nav-container button {
   width: 40%;
+}
+
+/* Services Section */
+#services-container {
+  text-align: center;
+}
+
+#services-container .desc {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+#services h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+#services p {
+  font-size: 1rem;
+  color: #767676;
+}
+
+#services .top-row {
+  display: flex;
 }
