@@ -43,6 +43,15 @@ body {
   left: 0;
 }
 
+#sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+#sidebar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 #sidebar-container {
   width: 72%;
   display: flex;
@@ -455,6 +464,15 @@ body {
 
 #middle-section {
   width: 68.6%;
+}
+
+#middle-section::-webkit-scrollbar {
+  display: none;
+}
+
+#middle-section {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 #middle-container {
