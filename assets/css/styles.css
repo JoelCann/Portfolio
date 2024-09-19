@@ -572,15 +572,16 @@ body {
   row-gap: 5rem;
 }
 
-#services-container .desc {
+.desc {
   width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   row-gap: 1.3rem;
+  text-align: center;
 }
 
-#services h3 {
+.desc h3 {
   font-size: 2.3rem;
   font-weight: 600;
   color: #2b2b2b;
@@ -592,7 +593,7 @@ body {
   color: #2b2b2b;
 }
 
-#services p {
+.desc p {
   font-size: 1rem;
   color: #767676;
   display: inline-block;
@@ -627,4 +628,55 @@ body {
 .cards .bottom-row {
   display: flex;
   justify-content: space-between;
+}
+
+#testimonials-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}
+
+#testimonials .card {
+  background-color: white;
+  width: 32%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  row-gap: 1.5rem;
+  padding: 45px;
+}
+
+#testimonials .card p {
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
+  color: #767676;
+}
+
+#testimonials .card h5 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #2b2b2b;
+}
+
+#testimonials .card-icons {
+  width: 23px;
+  display: flex;
+  column-gap: 12px;
+}
+
+.identity {
+  display: flex;
+  height: 24%;
+  column-gap: 1.5rem;
+}
+
+#testimonials .id-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
