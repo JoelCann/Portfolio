@@ -6,6 +6,15 @@ body {
   font-style: normal;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 #front {
   width: 100vw;
 }
@@ -17,13 +26,21 @@ body {
   justify-content: space-between;
 }
 
+#sidebar-placeholder {
+  width: 21%;
+  height: 100vh;
+}
+
 #sidebar {
   background-color: white;
   width: 21%;
-  height: 1415px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
 }
 
 #sidebar-container {
@@ -426,6 +443,7 @@ body {
   align-items: center;
   justify-content: center;
   column-gap: 19px;
+  margin-bottom: 50px;
 }
 
 #download-btn img {
@@ -509,10 +527,18 @@ body {
   background-repeat: no-repeat;
 }
 
+#nav-placeholder {
+  width: 6.5%;
+  height: 100vh;
+  background-color: rgba(168, 27, 27, 0);
+}
+
 #navbar {
   width: 6.5%;
   height: 100vh;
-  position: static;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 #nav-container {
