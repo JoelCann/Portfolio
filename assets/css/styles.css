@@ -843,3 +843,27 @@ label {
   font-size: 1rem;
   color: #767676;
 }
+
+/* Footer Section */
+
+footer {
+  background-color: white;
+  height: 100px;
+  width: 100%;
+}
+
+#footer-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-container h6 {
+  display: inline-block;
+  color: #2b2b2b;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
