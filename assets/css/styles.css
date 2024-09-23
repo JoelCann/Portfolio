@@ -804,19 +804,18 @@ label {
 }
 
 #right-side #cards {
-  background-color: white;
-  padding: 40px;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; */
-  /* height: 28%; */
-}
-
-#right-side  .card {
   display: flex;
   flex-direction: column;
-  row-gap: 2.1rem;
+  row-gap: 1.5rem;
+}
+
+#right-side .card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.1rem;
   justify-content: center;
+  background-color: white;
+  padding: 36px;
 }
 
 .card .img {
