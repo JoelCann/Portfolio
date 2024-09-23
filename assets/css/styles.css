@@ -812,7 +812,7 @@ label {
   /* height: 28%; */
 }
 
-.card {
+#right-side  .card {
   display: flex;
   flex-direction: column;
   row-gap: 2.1rem;
