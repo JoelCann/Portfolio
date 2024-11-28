@@ -14,7 +14,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
+      
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/scripts/index.js" defer></script>
   </head>
 
   <body>
@@ -31,7 +34,7 @@
                 alt=" picture of Joel cann"
               />
               <h4>Joel Cann</h4>
-              <p>Full-Stack Developer</p>
+              <p>Front-end Developer</p>
               <div id="socials">
                 <a href="#">
                   <img src="./assets/images/facebook.png" alt="facebook icon" />
@@ -188,13 +191,15 @@
               </div>
             </div>
             <hr class="divider" />
-            <button id="download-btn">
-              DOWNLOAD CV
-              <img
-                src="./assets/images/download-icon.png"
-                alt="download button"
-              />
-            </button>
+            <a class="w-[100%]" href="./assets/Joel Ekow Cann-Obuobisa-CV.pdf" download="Joel Ekow Cann-Obuobisa-CV.pdf">
+              <button id="download-btn">
+                DOWNLOAD CV
+                <img
+                  src="./assets/images/download-icon.png"
+                  alt="download button"
+                />
+              </button>
+            </a>
           </div>
         </div>
 
@@ -205,12 +210,12 @@
             <section id="hero-section">
               <div id="hero-container">
                 <div id="hero-description">
-                  <h1>I'm Joel Cann<br /><span>Full-stack</span> Developer</h1>
+                  <h1>I'm Joel Cann<br /><span>Front-end</span> Developer</h1>
                   <p>
-                    I develop intuitive web and mobile sulutions that grow with
+                    I develop intuitive, interactive and userfriendly web and mobile solutions that grow with
                     your business.
                   </p>
-                  <button>
+                  <button href="#contact-section">
                     HIRE ME
                     <img src="./assets/images/right-arrow.png" alt="" />
                   </button>
@@ -566,27 +571,39 @@
         <nav id="navbar">
           <div id="nav-container">
             <div id="icon-container">
-              <button>
-                <img src="./assets/images/home.png" alt="home button" />
-              </button>
-              <button>
-                <img src="./assets/images/service.png" alt="service button" />
-              </button>
-              <button>
-                <img src="./assets/images/cv.png" alt="cv button" />
-              </button>
-              <button>
-                <img
-                  src="./assets/images/portfolio.png"
-                  alt="portfolio button"
-                />
-              </button>
-              <button>
-                <img src="./assets/images/blog.png" alt="blog button" />
-              </button>
-              <button>
-                <img src="./assets/images/contact.png" alt="contact button" />
-              </button>
+              <a href="/">
+                <button>
+                  <img src="./assets/images/home.png" alt="home button" />
+                </button>
+              </a>
+              <a href="#services">
+                <button>
+                  <img src="./assets/images/service.png" alt="service button" />
+                </button>
+              </a>
+              <a href="">
+                <button>
+                  <img src="./assets/images/cv.png" alt="cv button" />
+                </button>
+              </a>
+              <a href="">
+                <button>
+                  <img
+                    src="./assets/images/portfolio.png"
+                    alt="portfolio button"
+                  />
+                </button>
+              </a>
+              <a href="">
+                <button>
+                  <img src="./assets/images/blog.png" alt="blog button" />
+                </button>
+              </a>
+              <a href="#contact-section">
+                <button>
+                  <img src="./assets/images/contact.png" alt="contact button" />
+                </button>
+              </a>
             </div>
           </div>
         </nav>
