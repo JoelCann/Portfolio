@@ -16,8 +16,20 @@
       rel="stylesheet"
       
     />
+    <link rel="icon" href="./assets/favicon-32x32.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/scripts/index.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "0zS_xINOf0_IFlUFx",
+      });
+   })();
+</script>
+<script src="script.js" defer></script>
   </head>
 
   <body>
@@ -36,25 +48,25 @@
               <h4>Joel Cann</h4>
               <p>Front-end Developer</p>
               <div id="socials">
-                <a href="#">
+                <a href="https://facebook.com/joel.cann.18" target="_blank" class="hover:scale-[1.2] duration-200 ease-in-out">
                   <img src="./assets/images/facebook.png" alt="facebook icon" />
                 </a>
-                <a href="#">
+                <a href="#" class="hover:scale-[1.2] duration-200 ease-in-out">
                   <img
                     src="./assets/images/instagram.png"
                     alt="instagram icon"
                   />
                 </a>
-                <a href="#">
+                <a href="#" class="hover:scale-[1.2] duration-200 ease-in-out">
                   <img src="./assets/images/twitter.png" alt="twitter icon" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/joel-cann-obuobisa/" target="_blank" class="hover:scale-[1.2] duration-200 ease-in-out">
                   <img src="./assets/images/linkedin.png" alt="linkedin icon" />
                 </a>
-                <a href="#">
-                  <img src="./assets/images/youtube.png" alt="youtube icon" />
+                <a href="https://wa.me/+233261101070?text=Hello%20Joel" target="_blank" class="hover:scale-[1.2] duration-200 ease-in-out">
+                  <img src="./assets/images/Whatsapp-icon.png" alt="Whatsapp icon" />
                 </a>
-                <a href="#">
+                <a href="#" class="hover:scale-[1.2] duration-200 ease-in-out">
                   <img src="./assets/images/dribbble.png" alt="dribble icon" />
                 </a>
               </div>
@@ -64,12 +76,9 @@
             <div id="about">
               <div class="about-item">
                 <p class="prop">Experience:</p>
-                <p class="value">2 weeks</p>
+                <p class="value">1+ years</p>
               </div>
-              <div class="about-item">
-                <p class="prop">Residence:</p>
-                <p class="value">Africa</p>
-              </div>
+              
               <div class="about-item">
                 <p class="prop">Freelance:</p>
                 <p class="value">
@@ -77,7 +86,7 @@
                 </p>
               </div>
               <div class="about-item">
-                <p class="prop">Address:</p>
+                <p class="prop">Location:</p>
                 <p class="value">Accra, Ghana</p>
               </div>
             </div>
@@ -191,7 +200,7 @@
               </div>
             </div>
             <hr class="divider" />
-            <a class="w-[100%]" href="./assets/Joel Ekow Cann-Obuobisa-CV.pdf" download="Joel Ekow Cann-Obuobisa-CV.pdf">
+            <a class="w-[100%] hover:scale-[1.05] duration-200 ease-in-out hover:text-white" href="./assets/Joel Ekow Cann-Obuobisa-CV.pdf" download="Joel Ekow Cann-Obuobisa-CV.pdf">
               <button id="download-btn">
                 DOWNLOAD CV
                 <img
@@ -215,10 +224,12 @@
                     I develop intuitive, interactive and userfriendly web and mobile solutions that grow with
                     your business.
                   </p>
-                  <button href="#contact-section">
-                    HIRE ME
-                    <img src="./assets/images/right-arrow.png" alt="" />
-                  </button>
+                  <a href="#contact-section">
+                    <button class="hover:scale-[1.05] duration-200 ease-in-out hover:text-white">
+                      HIRE ME
+                      <img src="./assets/images/right-arrow.png" alt="" />
+                    </button>
+                  </a>
                 </div>
                 <div id="hero-img"></div>
               </div>
@@ -383,98 +394,110 @@
                   <div id="left-side">
                     <h4>Request a quote</h4>
                     <div>
-                      <form action="">
-                        <label for="">
+                      <form id="form">
+                        <label for="client">
                           Client / Organisation Name (Required)
                         </label>
                         <br />
                         <input
-                          class="form-input-field h-[40px] w-[100%]"
+                          id="client"
+                          class="form-input-field h-[40px] w-[100%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
                           type="text"
+                          name="client"
                           placeholder="Client name or organisation name"
                           required
                         /><br /><br />
 
-                        <label for=""> E-mail (Required) </label>
+                        <label for="email"> E-mail (Required) </label>
                         <br />
                         <input
-                          class="form-input-field h-[40px] w-[49%]"
+                        id="email"
+                          class="form-input-field h-[40px] w-[49%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
                           type="email"
+                          name="email"
                           placeholder="Enter e-mail"
+                          required
                         />
                         <input
-                          class="form-input-field h-[40px] w-[49%]"
+                          id="confirm-email"
+                          class="form-input-field h-[40px] w-[49%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
                           type="email"
+                          name="confirm-email"
                           placeholder="Confirm e-mail"
                         /><br /><br />
-                        <label for=""> Industry (Required)</label>
+                        <label for="industry"> Industry (Required)</label>
                         <br />
                         <select
-                          class="form-input-field h-[40px] w-[60%]"
-                          name=""
-                          id=""
+                          class="form-input-field h-[40px] w-[60%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
+                          name="industry"
+                          id="industry"
                           required
                         >
-                          <option value="">Agriculture</option>
-                          <option value="">Construction</option>
-                          <option value="">Energy, Oil & Gas</option>
-                          <option value="">Real Estate</option>
-                          <option value="">Mining</option>
-                          <option value="">Travel & Tourism</option>
-                          <option value="">Other</option></select
+                          <option value="" disabled>Select Industry</option>
+                          <option value="Agriculture">Agriculture</option>
+                          <option value="Construction">Construction</option>
+                          <option value="Energy-Oil-Gas">Energy, Oil & Gas</option>
+                          <option value="Real-Estate">Real Estate</option>
+                          <option value="Mining">Mining</option>
+                          <option value="Travel & Tourism">Travel & Tourism</option>
+                          <option value="Other">Other</option></select
                         ><br /><br />
-                        <label for="">Contact person's name (Required)</label
+                        <label for="contact-person-fname">Contact person's name (Required)</label
                         ><br />
                         <input
-                          class="form-input-field h-[40px] w-[49%]"
+                        id="contact-person"
+                          class="form-input-field h-[40px] w-[100%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
                           class="form-input-field"
                           type="text"
-                          placeholder="First name"
-                        />
-                        <input
-                          class="form-input-field h-[40px] w-[49%]"
-                          type="text"
-                          placeholder="Last name"
+                          name="contact-person-fname"
+                          placeholder="eg. John Doe"
                         />
                         <br /><br />
-                        <label class="label">Services Required (Required)</label
+                        <label for="services" class="label">Services Required (Required)</label
                         ><br />
-                        <div class="checkboxes">
+                        <div class="checkboxes ">
                           <div id="left-column">
-                            <input type="checkbox" placeholder="First name" />
-                            <span> Web Development </span>
+                            <label>
+                              <input type="checkbox" name="service" value="web-development" class="mr-[1rem] accent-[#ffb400]"/>Web Development
+                            </label>
                             <br />
-                            <input type="checkbox" placeholder="First name" />
-                            <span> Mobile App Development </span>
+                            <label for="">
+                              <input type="checkbox" name="service" value="mobile-app-development"  class="mr-[1rem] accent-[#ffb400]"/>Mobile App Development
+                            </label>
                             <br />
-                            <input type="checkbox" placeholder="Last name" />
-                            <span> Digital Marketing </span>
+                            <label for="">
+                              <input type="checkbox" name="service" value="digital-marketing"  class="mr-[1rem] accent-[#ffb400]"/>Digital Marketing
+                            </label>
                             <br />
+                            
                           </div>
                           <div id="right-column">
-                            <input type="checkbox" placeholder="Last name" />
-                            <span> UI/UX Design </span>
+                            <label for="">
+                              <input type="checkbox" name="service" value="ui-ux-designing"  class="mr-[1rem] accent-[#ffb400]"/>UI/UX Design
+                            </label>
                             <br />
-                            <input type="checkbox" placeholder="Last name" />
-                            <span> Videography </span>
+                            <label for="">
+                              <input type="checkbox" name="service" value="videography"  class="mr-[1rem] accent-[#ffb400]"/>Videography
+                            </label>
                             <br />
-
-                            <input type="checkbox" placeholder="Last name" />
-                            <span> Other Services </span>
+                            <label for="">
+                              <input type="checkbox" name="service" value="other-services"  class="mr-[1rem] accent-[#ffb400]"/>Other Services
+                            </label>
                             <br />
                           </div>
                         </div>
                         <br /><br />
-                        <label for="">Project Description</label><br />
+                        <label for="project-description">Project Description (Required)</label><br />
                         <textarea
-                          class="form-input-field w-[100%]"
-                          name=""
-                          id=""
+                          class="form-input-field w-[100%] p-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
+                          name="project-description"
+                          id="project-description"
                           cols="45"
                           rows="4"
+                          required
                         ></textarea>
                         <span>
-                          <button>SUBMIT</button>
+                          <button id="btn" type="submit">SUBMIT</button>
                         </span>
                       </form>
                     </div>
@@ -553,7 +576,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </form>
               </div>
             </section>
 

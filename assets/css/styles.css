@@ -519,7 +519,6 @@ body {
   justify-content: center;
   column-gap: 9px;
   padding: 19px 32px;
-  border-radius: 5px;
 }
 
 #hero-description img {
@@ -769,7 +768,6 @@ width: 50px;
 
 .form-input-field {
   background-color: #f0f0f6;
-  padding-left: 12px;
 }
 
 label {
