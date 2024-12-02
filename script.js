@@ -29,13 +29,33 @@ document.getElementById("form").addEventListener("submit", function (event) {
   emailjs.send(serviceId, templateId, payload).then(
     () => {
       btn.textContent = "SUBMIT";
-      alert("Sent!");
+
+      btn.textContent = "SUBMIT";
+      Toastify({
+        text: "✅ Request sent successfully!",
+        duration: 3000,
+
+        gravity: "bottom",
+        position: "center",
+        style: {
+          background: "#a2d953",
+        },
+      }).showToast();
 
       form.reset();
     },
-    (err) => {
+    () => {
       btn.textContent = "Send Email";
-      alert(JSON.stringify(err));
+      Toastify({
+        text: "Couldn't send Request...Chech internet and try again",
+        duration: 3000,
+        close: true,
+        gravity: "bottom",
+        position: "center",
+        style: {
+          background: "#FF0000",
+        },
+      }).showToast();
     }
   );
 });
