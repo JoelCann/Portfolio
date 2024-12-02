@@ -1,4 +1,5 @@
 const btn = document.getElementById("btn");
+const form = document.getElementById("form");
 
 document.getElementById("form").addEventListener("submit", function (event) {
   event.preventDefault();
@@ -11,7 +12,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
 
   const payload = {
     client: document.getElementById("client").value,
-    email: document.getElementById("email").value,
+    client_email: document.getElementById("email").value,
     confirmEmail: document.getElementById("confirm-email").value,
     industry: document.getElementById("industry").value,
     contactPerson: document.getElementById("contact-person").value,
@@ -23,12 +24,14 @@ document.getElementById("form").addEventListener("submit", function (event) {
   const serviceId = "service_xw9d6ef";
   const templateId = "template_wkvu3le";
 
-  const form = document.getElementById("form");
+  // const form = document.getElementById("form");
 
   emailjs.send(serviceId, templateId, payload).then(
     () => {
       btn.textContent = "SUBMIT";
       alert("Sent!");
+
+      form.reset();
     },
     (err) => {
       btn.textContent = "Send Email";
