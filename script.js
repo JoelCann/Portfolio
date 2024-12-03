@@ -13,7 +13,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
   const payload = {
     client: document.getElementById("client").value,
     client_email: document.getElementById("email").value,
-    confirmEmail: document.getElementById("confirm-email").value,
+    telephone: document.getElementById("telephone").value,
     industry: document.getElementById("industry").value,
     contactPerson: document.getElementById("contact-person").value,
     // contactPersonLname: "", // Add this field if needed

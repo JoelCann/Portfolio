@@ -410,24 +410,33 @@
                           placeholder="Client name or organisation name"
                           required
                         /><br /><br />
+                      <div class="flex justify-between">
 
-                        <label for="email"> E-mail (Required) </label>
+                        <div class="w-[53%]">
+                          <label for="email"> E-mail (Required) </label>
                         <br />
                         <input
                         id="email"
-                          class="form-input-field h-[40px] w-[49%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
+                          class="form-input-field h-[40px] w-[100%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
                           type="email"
                           name="email"
                           placeholder="Enter e-mail"
                           required
                         />
+                        </div>
+                        <div class="w-[45%]">
+                          <label for="email"> Phone Contact (Required) </label>
+                        <br />
                         <input
-                          id="confirm-email"
-                          class="form-input-field h-[40px] w-[49%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
-                          type="email"
-                          name="confirm-email"
-                          placeholder="Confirm e-mail"
+                          id="telephone"
+                          class="form-input-field h-[40px] w-[100%] px-[10px] focus:outline-none focus:ring-2 focus:ring-[#ffb400]"
+                          type="tel"
+                          name="telephone"
+                          placeholder="eg. +233XXXXXXXXX"
+                          required
                         /><br /><br />
+                        </div>
+                        </div>
                         <label for="industry"> Industry (Required)</label>
                         <br />
                         <select
@@ -464,26 +473,26 @@
                               <input type="checkbox" name="service" value="web-development" class="mr-[1rem] accent-[#ffb400]"/>Web Development
                             </label>
                             <br />
-                            <label for="">
+                            <label>
                               <input type="checkbox" name="service" value="mobile-app-development"  class="mr-[1rem] accent-[#ffb400]"/>Mobile App Development
                             </label>
                             <br />
-                            <label for="">
+                            <label>
                               <input type="checkbox" name="service" value="digital-marketing"  class="mr-[1rem] accent-[#ffb400]"/>Digital Marketing
                             </label>
                             <br />
                             
                           </div>
                           <div id="right-column">
-                            <label for="">
+                            <label>
                               <input type="checkbox" name="service" value="ui-ux-designing"  class="mr-[1rem] accent-[#ffb400]"/>UI/UX Design
                             </label>
                             <br />
-                            <label for="">
+                            <label>
                               <input type="checkbox" name="service" value="videography"  class="mr-[1rem] accent-[#ffb400]"/>Videography
                             </label>
                             <br />
-                            <label for="">
+                            <label>
                               <input type="checkbox" name="service" value="other-services"  class="mr-[1rem] accent-[#ffb400]"/>Other Services
                             </label>
                             <br />
@@ -597,22 +606,22 @@
         <nav id="navbar">
           <div id="nav-container">
             <div id="icon-container">
-              <a href="/">
+              <a href="/" class="hover:scale-[1.4] duration-20 ">
                 <button>
                   <img src="./assets/images/home.png" alt="home button" />
                 </button>
               </a>
-              <a href="#services">
+              <a href="#services" class="hover:scale-[1.4] duration-20 ">
                 <button>
                   <img src="./assets/images/service.png" alt="service button" />
                 </button>
               </a>
-              <a href="">
+              <a href="" class="hover:scale-[1.4] duration-20 ">
                 <button>
                   <img src="./assets/images/cv.png" alt="cv button" />
                 </button>
               </a>
-              <a href="">
+              <a href="" class="hover:scale-[1.4] duration-20 ">
                 <button>
                   <img
                     src="./assets/images/portfolio.png"
@@ -620,12 +629,12 @@
                   />
                 </button>
               </a>
-              <a href="">
+              <a href="" class="hover:scale-[1.4] duration-20 ">
                 <button>
                   <img src="./assets/images/blog.png" alt="blog button" />
                 </button>
               </a>
-              <a href="#contact-section">
+              <a href="#contact-section" class="hover:scale-[1.4] duration-20 ">
                 <button>
                   <img src="./assets/images/contact.png" alt="contact button" />
                 </button>
