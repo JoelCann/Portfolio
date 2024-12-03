@@ -82,3 +82,37 @@ navBtns.forEach((item) => {
 
 const homeBtn = document.querySelector("#home");
 homeBtn.classList.add("active");
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll("section"); // Replace 'section' with your section tags or IDs
+  const navBtns = document.querySelectorAll(".nav-btn"); // Select all navigation buttons
+
+  // Function to update the active state
+  const updateActiveNav = () => {
+    let currentSection = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        currentSection = section.getAttribute("id");
+      }
+    });
+
+    navBtns.forEach((btn) => {
+      btn.classList.remove("active");
+      const targetSection = btn.parentElement.getAttribute("href").substring(1);
+      if (targetSection === currentSection) {
+        btn.classList.add("active");
+      }
+    });
+  };
+
+  // Event listener for scroll
+  window.addEventListener("scroll", updateActiveNav);
+});
