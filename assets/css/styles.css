@@ -870,3 +870,9 @@ footer {
   font-weight: 300;
   letter-spacing: 0.1rem;
 }
+
+
+.nav-btn.active {
+  background-color: #ffb400;
+  color: black;
+}

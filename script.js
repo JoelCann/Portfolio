@@ -1,3 +1,5 @@
+// Js for request quote sending
+
 const btn = document.getElementById("btn");
 const form = document.getElementById("form");
 
@@ -59,3 +61,24 @@ document.getElementById("form").addEventListener("submit", function (event) {
     }
   );
 });
+
+
+
+
+
+// js for active nav link behavior
+
+const navBtns = document.querySelectorAll(".nav-btn"); //selects all menu items
+
+
+navBtns.forEach((item) => {
+  //add event listeners to each button
+  item.addEventListener("click", ()=>{
+    navBtns.forEach((navBtn) => navBtn.classList.remove("active"));
+    item.classList.add("active");
+  })
+})
+
+
+const homeBtn = document.querySelector("#home");
+homeBtn.classList.add("active");
