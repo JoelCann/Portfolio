@@ -569,22 +569,6 @@ body {
   }
 }
 
-/* @media screen and (max-width: 380px) {
-  #hero-container {
-    width: 90%;
-    height: 70vh;
-    margin: 0 auto;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 15px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  }
-
-} */
-
 @media screen and (max-width: 480px) {
   #hero-section {
     width: 100vw;
@@ -924,37 +908,43 @@ width: 50px;
   }
 }
 
-
 @media screen and (max-width: 480px) {
+  #testimonials {
+    width: 100vw;
+    overflow: visible;
+  }
+
   #testimonials-container {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    row-gap: 5rem;
+    row-gap: 3.5rem;
   }
 
   #testimonials .cards {
     display: flex;
-
     column-gap: 1.5rem;
-    width: 100%;
+    height: auto;
     overflow-x: auto;
-  }
-
-  #testimonials .cards {
-    /* width: 68.6%; */
+    scroll-behavior: smooth;
+    scrollbar-width: thin; /* Firefox */
+    width: auto; /* Let it grow with content */
+    max-width: 100%; /* Prevent overflow */
   }
 
   #testimonials .card {
     background-color: white;
-    width: 32%;
-    height: 400px;
+    width: min(320px, 90vw);
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: center;
     row-gap: 1.5rem;
     padding: 45px;
+    flex: 0 0 auto; /* Prevent shrinking */
   }
 
   #testimonials .card p {
@@ -968,6 +958,7 @@ width: 50px;
     font-size: 1.2rem;
     font-weight: normal;
     color: #2b2b2b;
+    text-align: start;
   }
 
   #testimonials .card-icons {
@@ -987,6 +978,21 @@ width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #testimonials .cards {
+    scrollbar-width: thin; /* Firefox */
+  }
+  #testimonials .cards::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height */
+  }
+  #testimonials .cards::-webkit-scrollbar-thumb {
+    background: #ccc; /* Scrollbar color */
+    border-radius: 10px; /* Rounded edges */
+  }
+
+  #testimonials .cards {
+    scroll-behavior: smooth;
   }
 }
 
