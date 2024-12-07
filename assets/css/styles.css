@@ -945,6 +945,7 @@ width: 50px;
     row-gap: 1.5rem;
     padding: 45px;
     flex: 0 0 auto; /* Prevent shrinking */
+    border-radius: 15px;
   }
 
   #testimonials .card p {
@@ -1130,6 +1131,10 @@ width: 50px;
     display: flex;
     flex-direction: column;
     row-gap: 5rem;
+  }
+
+  #form {
+    border-radius: 15px;
   }
 
   #form-cards {
