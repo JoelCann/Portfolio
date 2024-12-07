@@ -572,11 +572,12 @@ body {
 @media screen and (max-width: 768px) and (min-width: 481px) {
   #hero-section {
     width: 100vw;
-    height: 30%;
+    height: 40vh;
   }
 
   #hero-container {
-    width: 90%;
+    width: 95%;
+    height: 100%;
     margin: 0 auto;
     padding: 0 35px;
     background-color: white;
@@ -595,13 +596,13 @@ body {
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    row-gap: 2rem;
+    row-gap: 1.3rem;
     z-index: 5;
   }
 
   #hero-img {
     width: 50%;
-    height: 80%;
+    height: 100%;
     background-image: url(../images/hero-pic.png);
     background-size: cover;
     background-position: center center;
