@@ -1086,7 +1086,7 @@ width: 50px;
     column-gap: 1.5rem;
     width: 100%;
     overflow-x: auto;
-    height: auto
+    height: auto;
   }
 
   #testimonials .card {
@@ -1349,7 +1349,6 @@ width: 50px;
 }
 
 @media screen and (min-width: 30rem) and (max-width: 48rem) {
-
   #contact-section {
     width: 100vw;
   }
@@ -1391,6 +1390,7 @@ width: 50px;
     width: 100%;
     background-color: white;
     padding: 30px;
+    border-radius: 10px;
   }
 
   #contact-section label {
@@ -1404,7 +1404,6 @@ width: 50px;
   label {
     font-size: 1.1rem;
   }
-
 
   #contact-section .checkboxes {
     display: flex;
@@ -1455,6 +1454,7 @@ width: 50px;
     justify-content: center;
     background-color: white;
     padding: 36px;
+    border-radius: 10px;
   }
 
   .card .img {
@@ -1643,6 +1643,62 @@ width: 50px;
     display: inline-block;
     color: #2b2b2b;
     font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media screen and (min-width: 30rem) and (max-width: 48rem) {
+  /*footer {
+    height: 100px;
+    width: 95vw;
+    background-color: white;
+
+    margin: 0 auto;
+
+    text-align: center;
+  }
+
+  #footer-container {
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+
+  #footer-container h6 {
+    display: inline-block;
+    color: #2b2b2b;
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+  } */
+
+
+  footer {
+    height: 100px;
+    width: 100vw;
+  }
+
+  #footer-container {
+    background-color: white;
+
+    height: 100%;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+  }
+
+  #footer-container h6 {
+    display: inline-block;
+    color: #2b2b2b;
+    font-size: 0.8rem;
     font-weight: 300;
     letter-spacing: 0.1rem;
   }
