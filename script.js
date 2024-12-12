@@ -119,7 +119,6 @@ hamburgerIcon.addEventListener("click", () => {
 const listItem = document.querySelectorAll(".list-item");
 listItem.forEach((item)=>{
   item.addEventListener("click", () => {
-    console.log("clicked");
     hamburgerIcon.classList.remove("active");
     hamburgerMenu.classList.remove("active");
   });
