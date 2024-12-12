@@ -756,7 +756,7 @@ body {
     height: 50px;
     width: 50px;
     background-color: #767676;
-    border-radius: 50px;
+    border-radius: 50%;
     margin-left: 10px;
   }
 
@@ -787,6 +787,7 @@ body {
     width: 100%;
     max-width: 300px;
     height: auto;
+    padding: 20px 0;
     margin-left: auto;
     position: fixed; /* Ensure it's fixed relative to the viewport */
     top: calc(8vh + 1rem); /* Position it below the navbar */
@@ -798,10 +799,16 @@ body {
   .hamburger-menu li {
     font-size: 1.2rem;
     padding: 10px 25px;
+    color: white;
+  }
+
+  .hamburger-menu li:hover {
+   
+    background-color: black;
   }
 
   .hamburger-menu.active {
-    right: 0; /*Initially hide the menu by moving it off-screen to the right*/
+    right: 0; 
   }
 
   .hamburger-icon.active {
