@@ -1190,10 +1190,17 @@ body {
 }
 
 @media screen and (max-width: 30rem) {
+  #mobile-navbar-placeholder {
+    position: relative;
+        margin-bottom: 2rem;
+
+  }
+
   #mobile-navbar {
     width: 100vw;
     height: 8vh;
-    position: relative;
+    position: fixed;
+
   }
 
   #mobile-navbar-container {
