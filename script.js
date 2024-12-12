@@ -141,3 +141,26 @@ const sidebarCloseBtn = document.querySelector(
 sidebarCloseBtn.addEventListener("click", ()=>{
   mobileSideBar.classList.remove("active");
 })
+
+
+// To push a section down when it is navigated to via anchor links, 
+//you can use CSS or JavaScript to adjust the section's position. 
+//This is commonly done to account for fixed headers or to create a visual offset.
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     const targetId = this.getAttribute('href').substring(1);
+//     const targetElement = document.getElementById(targetId);
+
+//     if (targetElement) {
+//       const offset = 150; // Adjust this value
+//       const elementPosition = targetElement.offsetTop;
+//       const offsetPosition = elementPosition - offset;
+
+//       window.scrollTo({
+//         top: offsetPosition,
+//         behavior: "smooth"
+//       });
+//     }
+//   });
+// });
