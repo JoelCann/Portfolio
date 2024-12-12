@@ -133,3 +133,12 @@ mobileNavbarAvatar.addEventListener("click", ()=> {
   console.log("clicked");
   mobileSideBar.classList.toggle("active");
 })
+
+
+const sidebarCloseBtn = document.querySelector(
+  ".mobile-sidebar-close-icon-container"
+);
+
+sidebarCloseBtn.addEventListener("click", ()=>{
+  mobileSideBar.classList.remove("active");
+})
