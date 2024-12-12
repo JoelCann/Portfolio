@@ -62,30 +62,20 @@ document.getElementById("form").addEventListener("submit", function (event) {
   );
 });
 
-
-
-
-
 // js for active nav link behavior
 
 const navBtns = document.querySelectorAll(".nav-btn"); //selects all menu items
 
-
 navBtns.forEach((item) => {
   //add event listeners to each button
-  item.addEventListener("click", ()=>{
+  item.addEventListener("click", () => {
     navBtns.forEach((navBtn) => navBtn.classList.remove("active"));
     item.classList.add("active");
-  })
-})
-
+  });
+});
 
 const homeBtn = document.querySelector("#home");
 homeBtn.classList.add("active");
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const sections = document.querySelectorAll("section"); // Replace 'section' with your section tags or IDs
@@ -116,3 +106,23 @@ document.addEventListener("DOMContentLoaded", () => {
   // Event listener for scroll
   window.addEventListener("scroll", updateActiveNav);
 });
+
+const hamburgerIcon = document.querySelector(".hamburger-icon");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+
+hamburgerIcon.addEventListener("click", () => {
+  hamburgerIcon.classList.toggle("active");
+  hamburgerMenu.classList.toggle("active");
+});
+
+
+const listItem = document.querySelectorAll(".list-item");
+listItem.forEach((item)=>{
+  item.addEventListener("click", () => {
+    console.log("clicked");
+    hamburgerIcon.classList.remove("active");
+    hamburgerMenu.classList.remove("active");
+  });
+})
+
+

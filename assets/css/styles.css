@@ -488,6 +488,17 @@ body {
   row-gap: 4rem;
 }
 
+@media screen and (min-width: 30rem) and (max-width: 48rem) {
+  #middle-section {
+    width: 100%;
+  }
+  #middle-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   #middle-section {
     width: 100%;
@@ -497,6 +508,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
+    padding: 1rem 0;
   }
 }
 
@@ -711,6 +723,115 @@ body {
     display: hidden;
   }
 }
+
+@media screen and (min-width: 768px) {
+  #mobile-navbar {
+    display: hidden;
+  }
+
+  #mobile-menu {
+    display: hidden;
+  }
+}
+
+@media screen and (max-width: 30rem) {
+  #mobile-navbar {
+    width: 100vw;
+    height: 8vh;
+    position: relative;
+  }
+
+  #mobile-navbar-container {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #mobile-sidebar-avatar {
+    height: 50px;
+    width: 50px;
+    background-color: #767676;
+    border-radius: 50px;
+    margin-left: 10px;
+  }
+
+  .hamburger-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hamburger-icon span {
+    width: 100%;
+    height: 10%;
+    background-color: #ffb400;
+    display: block;
+    margin: 10% 0;
+    border-radius: 50px;
+  }
+
+  .hamburger-menu {
+    background-color: #ffb400;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-left: auto;
+    position: fixed; /* Ensure it's fixed relative to the viewport */
+    top: calc(8vh + 1rem); /* Position it below the navbar */
+    right: -1000px; /* Initially hide the menu by moving it off-screen to the right */
+    z-index: 100;
+    transition: right 0.3s ease-in-out; /* Smooth transition for menu sliding */
+  }
+
+  .hamburger-menu li {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+  }
+
+  .hamburger-menu.active {
+    right: 0; /*Initially hide the menu by moving it off-screen to the right*/
+  }
+
+  .hamburger-icon.active {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hamburger-icon.active span {
+    margin: 0 0;
+    position: absolute;
+  }
+
+  .hamburger-icon.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-icon.active span:nth-child(1) {
+    transform: translateY(5%) rotate(45deg);
+  }
+
+  .hamburger-icon.active span:nth-child(3) {
+    transform: translateY(-5%) rotate(-45deg);
+  }
+}
+
 
 @media screen and (min-width: 768px) {
   #nav-placeholder {
@@ -1676,7 +1797,6 @@ width: 50px;
     font-weight: 300;
     letter-spacing: 0.1rem;
   } */
-
 
   footer {
     height: 100px;
