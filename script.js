@@ -127,7 +127,7 @@ listItem.forEach((item)=>{
 
 
 const mobileNavbarAvatar = document.querySelector("#mobile-navbar-avatar");
-const mobileSideBar = documtment.querySelector(".mobile-sidebar");
+const mobileSideBar = document.querySelector(".mobile-sidebar");
 
 mobileNavbarAvatar.addEventListener("click", ()=> {
   console.log("clicked");
