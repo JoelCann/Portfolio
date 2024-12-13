@@ -1208,7 +1208,7 @@ body {
     height: 100%;
     margin: 0 auto;
     background-color: white;
-    border-radius: 70px;
+    border-radius: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1216,7 +1216,8 @@ body {
 
   #mobile-navbar-avatar {
     height: 80%;
-    width: 50px;
+    /* width: 50px; */
+    aspect-ratio: 1/1;
     background-color: #767676;
     border-radius: 50%;
     margin-left: 10px;
