@@ -166,5 +166,20 @@ sidebarCloseBtn.addEventListener("click", ()=>{
 // });
 
 
+//The code below is used to position the mavbar avatar in a way that it is equidistant from the left, top and bottom sides of the parent container.
+function adjustMargin() {
+  const container = document.getElementById("mobile-navbar-container");
+  const avatar = document.getElementById("mobile-navbar-avatar");
+  const containerHeight = container.offsetHeight;
 
+  // Calculate 10% of the container's height
+  const marginLeft = containerHeight * 0.17;
+
+  // Apply the calculated margin-left dynamically
+  avatar.style.marginLeft = `${marginLeft}px`;
+}
+
+// Run on load and resize
+window.addEventListener("resize", adjustMargin);
+document.addEventListener("DOMContentLoaded", adjustMargin);
 
