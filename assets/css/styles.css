@@ -1189,18 +1189,19 @@ body {
   }
 }
 
+@media screen and (min-width: 30rem) and (max-width: 48rem) {
+}
+
 @media screen and (max-width: 30rem) {
   #mobile-navbar-placeholder {
     position: relative;
-        margin-bottom: 2rem;
-
+    margin-bottom: 2rem;
   }
 
   #mobile-navbar {
     width: 100vw;
     height: 8vh;
     position: fixed;
-
   }
 
   #mobile-navbar-container {
@@ -1361,8 +1362,6 @@ width: 50px;
 
 /* Services Section */
 @media screen and (min-width: 768px) {
-
-  
   #services-container {
     text-align: center;
     display: flex;
@@ -1594,8 +1593,6 @@ width: 50px;
 /* Testimonial section */
 
 @media screen and (min-width: 768px) {
-
-
   #testimonials-container {
     text-align: center;
     display: flex;
